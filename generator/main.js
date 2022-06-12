@@ -1,8 +1,8 @@
 const Moralis = require("moralis/node");
 const { timer } = require("rxjs");
 
-const serverUrl = ""; //Moralis Server Url here
-const appId = ""; //Moralis Server App ID here
+const serverUrl = ""; https://jmu0c0ojuqlc.usemoralis.com:2053/server
+const appId = ""; Nc8qiu8Ue9anS2YSrgyOhRaCPxyQXO5Hxsh4fTre
 Moralis.start({ serverUrl, appId });
 
 const resolveLink = (url) => {
@@ -10,8 +10,8 @@ const resolveLink = (url) => {
   return url.replace("ipfs://", "https://gateway.ipfs.io/ipfs/");
 };
 
-const collectionAddress = ""; //Collection Address Here
-const collectionName = ""; //CollectioonName Here
+const collectionAddress = ""; 0x7283fc323a44b2DfB95E59365D2fEaa519511114
+const collectionName = ""; TheDomDripDivas
 
 async function generateRarity() {
   const NFTs = await Moralis.Web3API.token.getAllTokenIds({
